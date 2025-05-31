@@ -109,23 +109,50 @@ vector<double> rect(double A, double T, double fill, double x0, double xk, doubl
 vector < double> OD(vector<double> sygnal, int deg, bool type) {
 	vector<double> fsyg;
 	vector<double> os_x;
+	int mian = 0;
 	for (int i = 0;i < sygnal.size();i++) {
 		double val = 0;
 		for (int j = 1;j <= deg;j++) {
 			if (i + j < sygnal.size()) {
 				val += sygnal[i + j];
+				mian += 1;
 			}
 		}
 		if (type) {
 			for (int k = 1; k <= deg; k++)
 				if (i - k >= 0) {
 					val += sygnal[i - k];
+					mian += 1;
 				}
 		}
-		if (type)
-			val /= 2 * deg;
-		else
-			val /= deg;
+		val /= mian;
+
+		fsyg.push_back(val);
+		os_x.push_back(i);
+
+	}
+	matplot::plot(os_x, fsyg, "o");
+	matplot::show();
+	return fsyg;
+}
+
+vector<double> DD(vector<double>sygnal, vector<double> filter) {
+	vector<double> fsyg;
+	vector<double> os_x;
+	int deg = filter.size();
+	double val = 0;
+	if (deg % 2 == 0) {
+		cout << "invalid filter size" << endl;
+	}
+	for (int i = 0; i < sygnal.size();i++) {
+		val = 0;
+		int h = i - deg / 2;
+		for (int j = 0; j < filter.size();j++) {
+			if (h >= 0 && h < sygnal.size()) {
+				val += sygnal[h] * filter[j];
+			}
+			h++;
+		}
 		fsyg.push_back(val);
 		os_x.push_back(i);
 
@@ -144,6 +171,7 @@ PYBIND11_MODULE(signals, m) {
 	m.def("OD", &OD, "Apply a 1D filter to a vector of doubles");
 	m.def("dft", &dft, "Apply Fouriers transform");
 	m.def("idft", &idft, "Apply reverse Fouriers transform");
+	m.def("DD", &DD, "Apply a 2D filter with to a vector of doubles");
 }
 
 
