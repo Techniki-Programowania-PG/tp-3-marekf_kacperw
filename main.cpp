@@ -162,6 +162,18 @@ vector<double> DD(vector<double>sygnal, vector<double> filter) {
 	return fsyg;
 }
 
+double corr(vector<double> syg1, vector<double> syg2) {
+	double output = 0;
+	if (syg1.size() != syg2.size()) {
+		cout << "error: rozne wielkosci sygnalow" << endl;
+		return 0;
+	}
+	for (int i = 0; i < syg1.size(); i++) {
+		output += syg1[i] * syg2[i];
+	}
+	return output;
+}
+
 
 PYBIND11_MODULE(signals, m) {
 	m.def("sine", &sine, "A function that generates sine");
@@ -172,6 +184,7 @@ PYBIND11_MODULE(signals, m) {
 	m.def("dft", &dft, "Apply Fouriers transform");
 	m.def("idft", &idft, "Apply reverse Fouriers transform");
 	m.def("DD", &DD, "Apply a 2D filter with to a vector of doubles");
+	m.def("corr", &corr, "Calculate correlation of two signals");
 }
 
 

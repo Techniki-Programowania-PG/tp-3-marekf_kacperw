@@ -55,3 +55,7 @@ dft(input) - zwraca transformatę fouriera sygnału wejściowego
 idft(input) - przeprowadza odwrotną transformatę fouriera, zwraca wektor
 	input - transformata sygnału, wektor
 	
+
+corr(syg1,syg2) - zwraca korelacje dwóch sygnałów, sygnały muszą mieć taką samą wielkość
+	syg1 - sygnał pierwszy, wektor doubli
+	syg2 - sygnał drugi, wektor doubli
