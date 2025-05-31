@@ -1,0 +1,57 @@
+Projekt 3 - TP Marek Foryś, Kacper Wiśniewski
+
+aby zbudować projekt należy postepować zgodnie z instrukcją:
+	1. w folderze build odpalić gitbash
+	2. użyć komendy cmake ..
+	3. użyć komendy cmake --build . --config Release
+	4. w folderze Release gotowy jest moduł biblioteki pythonowej
+	5  w folderze Release uruchomic pythona za pomocą np gitbasha
+	6. w pythonie użyć komendy import signals as s
+	7. biblioteka gotowa do uzycia w pythonie
+
+Dokumentacja biblioteki signals:
+sine(A,w,x0,xk,sample_s) - generuje sygnał dyskretny sinusoidalny, zwraca wektor
+	A-amplituda sygnału
+	w - częstość sygnału
+	x0 - punkt początkowy próbek
+	xk - punkt końcowy próbek
+	sample_s - ilość próbek
+
+cosine(A,w,x0,xk,sample_s) - generuje sygnał dyskretny kosinusoidalny, zwraca wektor
+	A-amplituda sygnału
+	w - częstość sygnału
+	x0 - punkt początkowy próbek
+	xk - punkt końcowy próbek
+	sample_s - ilość próbek
+
+
+saw(A, freq, x0, xk, sample_s) - generuje sygnał piłokształtny, zwraca wektor
+	A-amplituda sygnału
+	freq - częstotliwość sygnału
+	x0 - punkt początkowy próbek
+	xk - punkt końcowy próbek
+	sample_s - ilość próbek
+
+rect(A,T, fill, x0, xk, sample_s)- generuje dyskretny sygnał prostokątny, zwraca wektor
+	A-amplituda sygnału
+	T - okres sygnału
+	fill - współczynnik wypełnienia
+	x0 - punkt początkowy próbek
+	xk - punkt końcowy próbek
+	sample_s - ilość próbek
+
+OD(sygnal, deg, type)- przyjmuje wektor wartości zwraca przefiltrowany wektor(stosuje uśrednianie próbki)
+	sygnal - wektor wejściowy
+	deg - stopień filtracji, indykuje ilość sąsiednich wartości do uśrednienia
+	type - typ filtracji, 0 - uśradnia deg wartości po próbką, 1 -uśrednia deg przed próbką i deg po próbce
+	
+DD(sygnal, filter)- nakłada maskę na wektor wejściowy i filtruje go
+	sygnal - wektor wejściowy
+	filter - wektor maski
+
+dft(input) - zwraca transformatę fouriera sygnału wejściowego
+	input  - sygnał wejściowy, wektor 
+
+idft(input) - przeprowadza odwrotną transformatę fouriera, zwraca wektor
+	input - transformata sygnału, wektor
+	
