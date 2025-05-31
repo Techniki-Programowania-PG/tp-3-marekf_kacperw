@@ -1,0 +1,10 @@
+^C:\USERS\SI4700V18PROFIT\ONEDRIVE\PULPIT\PROJEKT3\TP-3-MAREKF_KACPERW\EXTERN\MATPLOTPLUSPLUS\SOURCE\MATPLOT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/SI4700V18PROFIT/OneDrive/Pulpit/Projekt3/tp-3-marekf_kacperw -BC:/Users/SI4700V18PROFIT/OneDrive/Pulpit/Projekt3/tp-3-marekf_kacperw/build --check-stamp-file C:/Users/SI4700V18PROFIT/OneDrive/Pulpit/Projekt3/tp-3-marekf_kacperw/build/extern/matplotplusplus/source/matplot/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

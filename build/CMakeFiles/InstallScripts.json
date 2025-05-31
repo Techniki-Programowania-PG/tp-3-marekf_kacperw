@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/SI4700V18PROFIT/OneDrive/Pulpit/Projekt3/tp-3-marekf_kacperw/build/cmake_install.cmake",
+		"C:/Users/SI4700V18PROFIT/OneDrive/Pulpit/Projekt3/tp-3-marekf_kacperw/build/extern/pybind11/cmake_install.cmake",
+		"C:/Users/SI4700V18PROFIT/OneDrive/Pulpit/Projekt3/tp-3-marekf_kacperw/build/extern/matplotplusplus/cmake_install.cmake",
+		"C:/Users/SI4700V18PROFIT/OneDrive/Pulpit/Projekt3/tp-3-marekf_kacperw/build/extern/matplotplusplus/source/cmake_install.cmake",
+		"C:/Users/SI4700V18PROFIT/OneDrive/Pulpit/Projekt3/tp-3-marekf_kacperw/build/extern/matplotplusplus/source/3rd_party/cmake_install.cmake",
+		"C:/Users/SI4700V18PROFIT/OneDrive/Pulpit/Projekt3/tp-3-marekf_kacperw/build/extern/matplotplusplus/source/matplot/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

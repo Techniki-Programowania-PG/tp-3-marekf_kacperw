@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindBLAS.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindJPEG.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindLAPACK.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindTIFF.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/SelectLibraryConfigurations.cmake
+C:/Users/SI4700V18PROFIT/OneDrive/Pulpit/Projekt3/tp-3-marekf_kacperw/extern/matplotplusplus/cmake/FindFFTW.cmake
+C:/Users/SI4700V18PROFIT/OneDrive/Pulpit/Projekt3/tp-3-marekf_kacperw/extern/matplotplusplus/cmake/FindOpenCV.cmake
+C:/Users/SI4700V18PROFIT/OneDrive/Pulpit/Projekt3/tp-3-marekf_kacperw/extern/matplotplusplus/source/3rd_party/CMakeLists.txt

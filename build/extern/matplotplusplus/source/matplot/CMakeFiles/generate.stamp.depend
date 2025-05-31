@@ -1,0 +1,12 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/GenerateExportHeader.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/exportheader.cmake.in
+C:/Users/SI4700V18PROFIT/OneDrive/Pulpit/Projekt3/tp-3-marekf_kacperw/extern/matplotplusplus/source/matplot/CMakeLists.txt
