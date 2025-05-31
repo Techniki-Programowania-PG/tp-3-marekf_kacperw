@@ -1,4 +1,4 @@
-Projekt 3 - TP Marek Foryś, Kacper Wiśniewski
+Projekt 3 - TP Marek Foryś 203653, Kacper Wiśniewski 203347
 
 aby zbudować projekt należy postepować zgodnie z instrukcją:
 	1. w folderze build odpalić gitbash
