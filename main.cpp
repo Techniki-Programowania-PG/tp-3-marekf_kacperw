@@ -162,16 +162,27 @@ vector<double> DD(vector<double>sygnal, vector<double> filter) {
 	return fsyg;
 }
 
-double corr(vector<double> syg1, vector<double> syg2) {
-	double output = 0;
-	if (syg1.size() != syg2.size()) {
-		cout << "error: rozne wielkosci sygnalow" << endl;
-		return 0;
+std::vector<double> corr(const std::vector<double>& x, const std::vector<double>& y) {
+	int N = x.size();
+	int M = y.size();
+	int len = N + M - 1;
+
+	std::vector<double> wynik(len, 0.0);
+	vector<double> os_x;
+	for (int lag = -(M - 1); lag < N; ++lag) {
+		double suma = 0.0;
+		for (int i = 0; i < M; ++i) {
+			int j = i + lag;
+			if (j >= 0 && j < N) {
+				suma += x[j] * y[i];
+			}
+		}
+		wynik[lag + M - 1] = suma;
+		os_x.push_back(lag + M - 1);
 	}
-	for (int i = 0; i < syg1.size(); i++) {
-		output += syg1[i] * syg2[i];
-	}
-	return output;
+	matplot::plot(os_x, wynik, "o");
+	matplot::show();
+	return wynik;
 }
 
 
